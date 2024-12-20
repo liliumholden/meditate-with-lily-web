@@ -23,7 +23,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        // Eager load meditations for the category
+        // load meditations for the category - this is not eager load lol
         $meditations = $category->meditations;
 
         // Pass the category and its meditations to the view
